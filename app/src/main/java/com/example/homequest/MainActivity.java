@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btSubmit;
     TextView tvRegister;
 
+    public String stringValue(EditText value){
+        return value.getText().toString().trim();
+    }
+
     public void successfulLogIn(String user){
         AlertDialog.Builder builder = new AlertDialog.Builder(
                 MainActivity.this
@@ -48,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
         btSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                if(etUsername.getText().toString().equals("parent") && etPassword.getText().toString().equals("parent")){
+                if(stringValue(etUsername).equals("parent") && stringValue(etPassword).equals("parent")){
                     successfulLogIn("parent");
                     Intent intent = new Intent(MainActivity.this, parentHome.class);
                     startActivity(intent);
-                }else if(etUsername.getText().toString().equals("child") && etPassword.getText().toString().equals("child")){
+                }else if(stringValue(etUsername).equals("child") && stringValue(etPassword).equals("child")){
                     successfulLogIn("child");
                     Intent intent = new Intent(MainActivity.this, childHome.class);
                     startActivity(intent);
