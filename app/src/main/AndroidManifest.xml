@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeQuest">
+<<<<<<< HEAD
         <activity
             android:name=".assignTask"
             android:label="@string/title_activity_assign_task"
             android:theme="@style/Theme.HomeQuest.NoActionBar"></activity>
+=======
+        <activity android:name=".ConnorTest"></activity>
+>>>>>>> 7419234ad90f65e846d58c8389a0fcfa1939a471
         <activity android:name=".registerActivity" />
         <activity android:name=".childHome" />
         <activity android:name=".parentHome" />

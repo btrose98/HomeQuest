@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/src/main/AndroidManifest.xml
+app/src/main/AndroidManifest.xml
+app/src/main/res/layout/activity_connor_test.xml
+app/src/main/res/layout/activity_connor_test.xml
