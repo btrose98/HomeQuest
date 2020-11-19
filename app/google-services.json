@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "953157539297",
+    "firebase_url": "https://homequest-1f873.firebaseio.com",
+    "project_id": "homequest-1f873",
+    "storage_bucket": "homequest-1f873.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953157539297:android:01b030496c99125c2aaea0",
+        "android_client_info": {
+          "package_name": "com.example.homequest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953157539297-j9420md22m6n4bcobn46p5m5tjd4cm05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeFSo6HqodJxMu3tJBcbGdl9wP3cDoNIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953157539297-j9420md22m6n4bcobn46p5m5tjd4cm05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

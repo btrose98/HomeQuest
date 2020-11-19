@@ -11,12 +11,18 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class registerActivity extends AppCompatActivity {
     private Button btCreateAccount;
-    TextView etFirstName, etLastName, etEmail, etPasswordRegister;
+    TextView reg_fullname, reg_username, reg_email, reg_password;
+
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
 
     public boolean checkEmptyField(){
-        if(etFirstName.getText().toString().equals("") || etLastName.getText().toString().equals("") || etEmail.getText().toString().equals("") || etPasswordRegister.getText().toString().equals("")){
+        if(reg_fullname.getText().toString().equals("") || reg_username.getText().toString().equals("") || reg_email.getText().toString().equals("") || reg_password.getText().toString().equals("")){
             Toast.makeText(registerActivity.this, "you did not fill in all the required fields above.",Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -24,7 +30,7 @@ public class registerActivity extends AppCompatActivity {
     }
 
     public boolean isValidEmail() {
-        String target = etEmail.getText().toString();
+        String target = reg_email.getText().toString();
         if (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches()){
             return true;
         }
@@ -38,16 +44,28 @@ public class registerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         btCreateAccount = findViewById(R.id.bt_createAccount);
-        etFirstName = findViewById(R.id.et_firstName);
-        etLastName = findViewById(R.id.et_lastName);
-        etEmail = findViewById(R.id.et_email);
-        etPasswordRegister = findViewById(R.id.et_passwordRegister);
+        reg_fullname = findViewById(R.id.regFullname);
+        reg_username = findViewById(R.id.regUsername);
+        reg_email = findViewById(R.id.regEmail);
+        reg_password = findViewById(R.id.regPassword);
 
         btCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 if(checkEmptyField() && isValidEmail()){
                     Toast.makeText(registerActivity.this, "Welcome to the HomeQuest family!",Toast.LENGTH_SHORT).show();
+                    rootNode = FirebaseDatabase.getInstance();
+                    reference = rootNode.getReference("users");
+
+                    //get all the values
+                    String fullname = reg_fullname.getText().toString();
+                    String username = reg_username.getText().toString();
+                    String email = reg_email.getText().toString();
+                    String password = reg_password.getText().toString();
+
+                    UserHelperClass helperClass = new UserHelperClass(fullname, username, email, password);
+                    reference.child(username).setValue(helperClass);
+
                     Intent intent = new Intent(registerActivity.this, parentHome.class);
                     startActivity(intent);
                 }
@@ -55,3 +73,5 @@ public class registerActivity extends AppCompatActivity {
         });
     }
 }
+
+//database setup:  https://www.youtube.com/watch?v=wa8OrQ_e76M&ab_channel=CodingWithTea
