@@ -93,7 +93,11 @@
             app:layout_constraintHorizontal_bias="0.873"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-            app:srcCompat="@drawable/messages_icon" />
+            app:srcCompat="@drawable/messages_icon"
+            android:scaleType="fitXY"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:adjustViewBounds="true"/>
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -104,19 +108,27 @@
             app:layout_constraintHorizontal_bias="0.867"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-            app:srcCompat="@drawable/settings_icon" />
+            app:srcCompat="@drawable/settings_icon"
+            android:scaleType="fitXY"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:adjustViewBounds="true"/>
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="140dp"
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="352dp"
+            android:layout_marginTop="344dp"
             app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintHorizontal_bias="0.338"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/assign_chores_icon" />
+            app:srcCompat="@drawable/assign_chores_icon"
+            android:scaleType="fitXY"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:adjustViewBounds="true"/>
 
         <ImageButton
             android:id="@+id/imageButton6"
@@ -126,7 +138,11 @@
             android:layout_marginEnd="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/track_progress_icon" />
+            app:srcCompat="@drawable/track_progress_icon"
+            android:scaleType="fitXY"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:adjustViewBounds="true"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

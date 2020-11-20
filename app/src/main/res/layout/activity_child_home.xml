@@ -253,7 +253,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.773"
-        app:srcCompat="@drawable/calendar_icon" />
+        app:srcCompat="@drawable/calendar_icon"
+        android:scaleType="fitXY"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"/>
 
     <ImageButton
         android:id="@+id/imageButton9"
@@ -265,7 +269,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.616"
-        app:srcCompat="@drawable/track_progress_icon" />
+        app:srcCompat="@drawable/track_progress_icon"
+        android:scaleType="fitXY"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"/>
 
     <ImageButton
         android:id="@+id/imageButton11"
@@ -277,7 +285,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775"
-        app:srcCompat="@drawable/messages_icon" />
+        app:srcCompat="@drawable/messages_icon"
+        android:scaleType="fitXY"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"/>
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -289,6 +301,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.946"
-        app:srcCompat="@drawable/settings_icon" />
+        app:srcCompat="@drawable/settings_icon"
+        android:scaleType="fitXY"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
