@@ -160,5 +160,20 @@
             app:layout_constraintTop_toBottomOf="@+id/imageButton4"
             app:srcCompat="@drawable/calendar_icon" />
 
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="166dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="28dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintHorizontal_bias="0.722"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:srcCompat="@drawable/balance_icon" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
