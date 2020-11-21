@@ -19,7 +19,7 @@
             android:layout_height="120dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.071"
@@ -86,54 +86,54 @@
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:layout_width="161dp"
+            android:layout_width="165dp"
             android:layout_height="130dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="32dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintHorizontal_bias="0.837"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-            app:srcCompat="@drawable/messages_icon"
-            android:scaleType="fitXY"
-            android:maxHeight="100dp"
-            android:maxWidth="100dp"
-            android:adjustViewBounds="true"/>
+            app:srcCompat="@drawable/messages_icon" />
 
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="155dp"
-            android:layout_height="124dp"
-            android:layout_marginTop="48dp"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.867"
+            app:layout_constraintHorizontal_bias="0.821"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-            app:srcCompat="@drawable/settings_icon"
-            android:scaleType="fitXY"
-            android:maxHeight="100dp"
-            android:maxWidth="100dp"
-            android:adjustViewBounds="true"/>
+            app:srcCompat="@drawable/settings_icon" />
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="140dp"
-            android:layout_height="120dp"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="344dp"
+            android:layout_marginTop="356dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintHorizontal_bias="0.44"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/assign_chores_icon"
-            android:scaleType="fitXY"
-            android:maxHeight="100dp"
-            android:maxWidth="100dp"
-            android:adjustViewBounds="true"/>
+            app:srcCompat="@drawable/assign_chores_icon" />
 
         <ImageButton
             android:id="@+id/imageButton6"
-            android:layout_width="158dp"
-            android:layout_height="127dp"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
             android:layout_marginTop="356dp"
             android:layout_marginEnd="40dp"
             android:adjustViewBounds="true"
@@ -143,6 +143,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/track_progress_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+            app:srcCompat="@drawable/calendar_icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
