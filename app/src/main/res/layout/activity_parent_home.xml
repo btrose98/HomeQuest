@@ -100,7 +100,7 @@
             app:srcCompat="@drawable/messages_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/parentSettingsButton"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginTop="24dp"
@@ -115,7 +115,7 @@
             app:srcCompat="@drawable/settings_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/assignChoresButton"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginStart="16dp"
@@ -145,7 +145,7 @@
             app:srcCompat="@drawable/track_progress_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/calendarImageButton"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginStart="32dp"
@@ -157,7 +157,7 @@
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/assignChoresButton"
             app:srcCompat="@drawable/calendar_icon" />
 
         <ImageButton
@@ -169,10 +169,10 @@
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintEnd_toStartOf="@+id/parentSettingsButton"
             app:layout_constraintHorizontal_bias="0.722"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/calendarImageButton"
             app:srcCompat="@drawable/balance_icon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
