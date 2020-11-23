@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeQuest">
-        <activity android:name=".friends"></activity>
+        <activity android:name=".childSettings"></activity>
+        <activity android:name=".redeemRewards" />
+        <activity android:name=".trackProgress" />
+        <activity android:name=".quests" />
+        <activity android:name=".friends" />
         <activity android:name=".assignChoresnew" />
         <activity android:name=".parentSettings" />
         <activity

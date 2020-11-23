@@ -111,4 +111,6 @@
     <string name="title_activity_calendar">ScrollingActivity</string>
     <string name="title_activity_assign_chores">ScrollingActivity</string>
     <string name="title_activity_settings_parent_new">settingsParentNew</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_child_settings">childSettings</string>
 </resources>
