@@ -95,7 +95,7 @@
             android:maxHeight="100dp"
             android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+            app:layout_constraintTop_toBottomOf="@+id/btProgress"
             app:srcCompat="@drawable/messages_icon" />
 
         <ImageButton
@@ -123,14 +123,14 @@
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+            app:layout_constraintEnd_toStartOf="@+id/btProgress"
             app:layout_constraintHorizontal_bias="0.44"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/assign_chores_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/btProgress"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginTop="356dp"

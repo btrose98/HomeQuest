@@ -74,7 +74,7 @@
             app:srcCompat="@drawable/calendar_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton9"
+            android:id="@+id/btRedeem"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginTop="425dp"
@@ -88,7 +88,7 @@
             app:srcCompat="@drawable/redeem_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton12"
+            android:id="@+id/btChildSettings"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginEnd="35dp"
@@ -101,7 +101,7 @@
             app:srcCompat="@drawable/settings_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/btQuest"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginTop="425dp"
@@ -110,7 +110,7 @@
             android:maxHeight="100dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/childCalendar"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton9"
+            app:layout_constraintEnd_toStartOf="@+id/btRedeem"
             app:layout_constraintHorizontal_bias="0.804"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -127,7 +127,7 @@
             android:maxHeight="100dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+            app:layout_constraintEnd_toStartOf="@+id/btChildSettings"
             app:layout_constraintHorizontal_bias="0.750"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/childCalendar"
@@ -141,11 +141,11 @@
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton12"
+            app:layout_constraintBottom_toTopOf="@+id/btChildSettings"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.35"
             app:layout_constraintStart_toEndOf="@+id/childCalendar"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton9"
+            app:layout_constraintTop_toBottomOf="@+id/btRedeem"
             app:layout_constraintVertical_bias="0.350"
             app:srcCompat="@drawable/messages_icon" />
 
