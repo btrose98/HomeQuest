@@ -16,7 +16,7 @@ public class assignChoresnew extends AppCompatActivity {
         setContentView(R.layout.activity_assign_choresnew);
 
 
-        backButton = findViewById(R.id.backButton2);
+        backButton = findViewById(R.id.backButton1);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
