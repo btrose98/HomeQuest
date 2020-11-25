@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class childHome extends AppCompatActivity {
 
     private ImageButton btCalender, btChildSettings, btRedeem, btQuest, btFriends;
+    private Button btSignOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class childHome extends AppCompatActivity {
         btRedeem = (ImageButton) findViewById(R.id.btRedeem);
         btQuest = (ImageButton) findViewById(R.id.btQuest);
         btFriends = (ImageButton) findViewById(R.id.btFriends);
+        btSignOut = findViewById(R.id.btChildSignout);
 
 
         btCalender.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +63,14 @@ public class childHome extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(childHome.this, friends.class);
+                startActivity(intent);
+            }
+        });
+
+        btSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(childHome.this, MainActivity.class);
                 startActivity(intent);
             }
         });

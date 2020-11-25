@@ -13,6 +13,18 @@
         android:background="#e7e9ec"
         tools:context=".parentHome">
 
+        <Button
+            android:id="@+id/btParentSignout"
+            android:layout_width="81dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="4dp"
+            android:text="sign out"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.012"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="340dp"

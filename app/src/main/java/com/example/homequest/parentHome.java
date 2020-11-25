@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class parentHome extends AppCompatActivity {
 
     ImageButton calendarButton, parentSettingsButton, assignChoresButton, btProgress;
+    private Button btSignOut;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,8 @@ public class parentHome extends AppCompatActivity {
         parentSettingsButton = findViewById(R.id.parentSettingsButton);
         assignChoresButton = findViewById(R.id.assignChoresButton);
         btProgress = (ImageButton) findViewById(R.id.btProgress);
+        btSignOut = findViewById(R.id.btParentSignout);
+
 
         calendarButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +55,14 @@ public class parentHome extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(parentHome.this, trackProgress.class);
+                startActivity(intent);
+            }
+        });
+
+        btSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(parentHome.this, MainActivity.class);
                 startActivity(intent);
             }
         });
