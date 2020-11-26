@@ -24,7 +24,7 @@ public class childHome extends AppCompatActivity {
         btRedeem = (ImageButton) findViewById(R.id.btRedeem);
         btQuest = (ImageButton) findViewById(R.id.btQuest);
         btFriends = (ImageButton) findViewById(R.id.btFriends);
-        btSignOut = findViewById(R.id.btChildSignout);
+        btSignOut = (Button) findViewById(R.id.btChildSignout);
 
 
         btCalender.setOnClickListener(new View.OnClickListener() {
