@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 public class trackProgress extends AppCompatActivity {
 
     private ImageButton backButton;
-    private static CheckBox taskComplete1;
+    private static CheckBox taskComplete1, taskComplete2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class trackProgress extends AppCompatActivity {
 
         backButton = findViewById(R.id.backButton);
         taskComplete1 = findViewById(R.id.btTrackProg1);
+        taskComplete2 = findViewById(R.id.btTrackProg2);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,8 +31,10 @@ public class trackProgress extends AppCompatActivity {
             }
         });
 
+
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor = preferences.edit();
+
         if(preferences.contains("checked2") && preferences.getBoolean("checked2",false) == true) {
             taskComplete1.setChecked(true);
         }else {
@@ -44,6 +47,24 @@ public class trackProgress extends AppCompatActivity {
                     editor.putBoolean("checked2", true);
                 }else{
                     editor.putBoolean("checked2", false);
+                }
+                editor.apply();
+            }
+        });
+
+
+        if(preferences.contains("checked4") && preferences.getBoolean("checked4",false) == true) {
+            taskComplete2.setChecked(true);
+        }else {
+            taskComplete2.setChecked(false);
+        }
+        taskComplete2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(taskComplete2.isChecked()) {
+                    editor.putBoolean("checked4", true);
+                }else{
+                    editor.putBoolean("checked4", false);
                 }
                 editor.apply();
             }

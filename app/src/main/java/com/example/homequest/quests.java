@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 public class quests extends AppCompatActivity {
 
     private ImageButton backButton;
-    private static CheckBox btChildFinish1, btParentFinish1, btApproved1;
+    private static CheckBox btChildFinish1, btParentFinish1, btApproved1, btChildFinish2, btParentFinish2, btApproved2;
 
 
     @Override
@@ -25,6 +25,9 @@ public class quests extends AppCompatActivity {
         btChildFinish1 = (CheckBox) findViewById(R.id.btChildFinish1);
         btParentFinish1 = (CheckBox) findViewById(R.id.btTrackProg1);
         btApproved1 = (CheckBox) findViewById(R.id.btChildApproved1);
+        btChildFinish2 = (CheckBox) findViewById(R.id.btChildFinish2);
+        btParentFinish2 = (CheckBox) findViewById(R.id.btTrackProg2);
+        btApproved2 = (CheckBox) findViewById(R.id.btChildApproved2);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor = preferences.edit();
@@ -50,6 +53,29 @@ public class quests extends AppCompatActivity {
         if(preferences.getBoolean("checked", true) && preferences.getBoolean("checked2", true)){
             btApproved1.setChecked(true);
         }
+
+
+        if(preferences.contains("checked3") && preferences.getBoolean("checked3",false) == true) {
+            btChildFinish2.setChecked(true);
+        }else {
+            btChildFinish2.setChecked(false);
+        }
+        btChildFinish1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(btChildFinish2.isChecked()) {
+                    editor.putBoolean("checked3", true);
+                }else{
+                    editor.putBoolean("checked3", false);
+                }
+                editor.apply();
+            }
+        });
+
+        if(preferences.getBoolean("checked3", true) && preferences.getBoolean("checked4", true)){
+            btApproved2.setChecked(true);
+        }
+
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -142,7 +142,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/btTrackProg2"
         android:layout_width="35dp"
         android:layout_height="42dp"
         android:layout_marginTop="68dp"
