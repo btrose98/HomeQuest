@@ -30,7 +30,7 @@ public class quests extends AppCompatActivity {
         final SharedPreferences.Editor editor = preferences.edit();
 
 
-        if(preferences.contains("checked") && preferences.getBoolean("checked",false) == false) {
+        if(preferences.contains("checked") && preferences.getBoolean("checked",false) == true) {
             btChildFinish1.setChecked(true);
         }else {
             btChildFinish1.setChecked(false);

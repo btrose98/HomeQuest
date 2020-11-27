@@ -75,8 +75,8 @@
         android:id="@+id/imageView22"
         android:layout_width="278dp"
         android:layout_height="49dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
         app:srcCompat="@drawable/thin_white_rectangle" />
@@ -107,7 +107,7 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="180dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView17"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
@@ -121,7 +121,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="188dp"
         android:layout_marginBottom="14dp"
-        android:text="Emily dusted the TV"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Emily loaded the dishwasher"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
         app:layout_constraintHorizontal_bias="0.0"
@@ -144,9 +145,9 @@
         android:id="@+id/checkBox6"
         android:layout_width="35dp"
         android:layout_height="42dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toEndOf="@+id/imageView22"
         app:layout_constraintTop_toBottomOf="@+id/btTrackProg1" />
 
@@ -158,11 +159,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="185dp"
         android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="Emily put away her toys"
         app:layout_constraintBottom_toBottomOf="@+id/imageView22"
         app:layout_constraintEnd_toEndOf="@+id/imageView22"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView22"
-        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+        app:layout_constraintTop_toTopOf="@+id/imageView22"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

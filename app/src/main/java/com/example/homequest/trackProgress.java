@@ -32,7 +32,7 @@ public class trackProgress extends AppCompatActivity {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor = preferences.edit();
-        if(preferences.contains("checked2") && preferences.getBoolean("checked2",false) == false) {
+        if(preferences.contains("checked2") && preferences.getBoolean("checked2",false) == true) {
             taskComplete1.setChecked(true);
         }else {
             taskComplete1.setChecked(false);
