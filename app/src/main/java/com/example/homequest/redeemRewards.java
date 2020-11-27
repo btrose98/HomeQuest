@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class redeemRewards extends AppCompatActivity {
 
     private ImageButton backButton;
+    //private Button btReward;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +20,20 @@ public class redeemRewards extends AppCompatActivity {
 
         backButton = findViewById(R.id.backButton);
 
+        // btReward = findViewById(R.id.button5);
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 finish();
             }
         });
+
+        /*btReward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Reward Claimed: 1 sleepover!", Toast.LENGTH_SHORT).show();
+            }
+        }); */
     }
 }

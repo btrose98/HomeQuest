@@ -11,10 +11,32 @@
         android:id="@+id/button4"
         android:layout_width="113dp"
         android:layout_height="112dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:text="Unlock"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="113dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Unlock"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="113dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:text="Unlock"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <TextView
@@ -117,29 +139,29 @@
         android:text="Put away toys"
         app:layout_constraintBottom_toBottomOf="@+id/imageView24"
         app:layout_constraintEnd_toEndOf="@+id/imageView24"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="@+id/imageView24"
         app:layout_constraintTop_toTopOf="@+id/imageView24"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/btChildFinish1"
-        android:layout_width="101dp"
-        android:layout_height="49dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="0dp"
         android:text="Finished"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView23" />
 
     <CheckBox
         android:id="@+id/btChildFinish2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
         android:text="Finished"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -169,7 +191,7 @@
         android:layout_marginStart="13dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="185dp"
-        android:text="Reward: Choose the movie \n for movie night"
+        android:text="Reward: Choose the movie \nfor movie night"
         app:layout_constraintEnd_toEndOf="@+id/imageView24"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView24"
@@ -190,49 +212,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="113dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:text="Unlock"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="113dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:text="Unlock"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
     <CheckBox
         android:id="@+id/btChildApproved1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
         android:checked="false"
         android:clickable="false"
         android:text="Approved"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
         app:layout_constraintTop_toBottomOf="@+id/btChildFinish1" />
 
     <CheckBox
         android:id="@+id/btChildApproved2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="16dp"
+        android:clickable="false"
         android:text="Approved"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btChildFinish2"
-        android:clickable="false" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/btChildFinish2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
