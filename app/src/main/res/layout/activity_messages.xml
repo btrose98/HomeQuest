@@ -6,4 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".messages">
 
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="41dp"
+        android:layout_height="44dp"
+        android:src="@drawable/ic_person"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="341dp"
+        android:layout_height="123dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_icon" />
+
+    <ImageView
+        android:id="@+id/person1"
+        android:layout_width="41dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="212dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintEnd_toStartOf="@+id/textView32"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="225dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="224dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Good job sweetie! I'm proud of you :)"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person1" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:text="Finished loading the dishwasher"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emily"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person" />
+
+    <EditText
+        android:id="@+id/textView36"
+        android:layout_width="214dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="500dp"
+        android:background="#e7e9ec"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Type your message here"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="84dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:text="001"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
