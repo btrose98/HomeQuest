@@ -7,6 +7,39 @@
     android:background="#e7e9ec"
     tools:context=".parentSettings">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="80dp"
+        android:text="Add Child"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="52dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="10dp"
+        android:maxHeight="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="367dp"
@@ -19,34 +52,24 @@
         app:layout_constraintVertical_bias="0.329"
         app:srcCompat="@drawable/medium_white_block" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:text="Old Password"
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="367dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
-        android:text="New Password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701"
+        app:srcCompat="@drawable/medium_white_block" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="204dp"
-        android:text="Change password"
+        android:text="Change Password"
+        android:textColor="#040404"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
@@ -65,56 +88,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
-
-    <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="52dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="10dp"
-        android:maxHeight="10dp"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_button" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="367dp"
-        android:layout_height="185dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701"
-        app:srcCompat="@drawable/medium_white_block" />
-
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -124,6 +97,7 @@
         android:layout_marginEnd="235dp"
         android:layout_marginBottom="141dp"
         android:text="Child Settings"
+        android:textColor="#0E0E0E"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView16"
         app:layout_constraintEnd_toEndOf="@+id/imageView16"
@@ -133,32 +107,71 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
-        android:text="Change Password"
-        android:textStyle="bold"
+        android:id="@+id/addChildName"
+        android:layout_width="197dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="442dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="261dp"
+        android:background="#e7e9ec"
+        android:hint="Name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/addChildPassword"
+        android:layout_width="191dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="185dp"
+        android:background="#e7e9ec"
+        android:hint="Password"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="188dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="453dp"
+        android:background="#e7e9ec"
+        android:hint="Old Password"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="251dp"
-        android:layout_marginBottom="80dp"
-        android:text="Add Child"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
-        app:layout_constraintEnd_toEndOf="@+id/imageView16"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView16"
-        app:layout_constraintTop_toTopOf="@+id/imageView16"
-        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="188dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="399dp"
+        android:background="#e7e9ec"
+        android:hint="New Password"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
