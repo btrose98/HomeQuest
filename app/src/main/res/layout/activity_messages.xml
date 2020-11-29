@@ -10,9 +10,12 @@
         android:id="@+id/person"
         android:layout_width="41dp"
         android:layout_height="44dp"
+        android:layout_marginTop="88dp"
         android:src="@drawable/ic_person"
-        tools:layout_editor_absoluteX="319dp"
-        tools:layout_editor_absoluteY="214dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <ImageView
         android:id="@+id/logo"
@@ -64,10 +67,13 @@
         android:id="@+id/textView34"
         android:layout_width="190dp"
         android:layout_height="39dp"
+        android:layout_marginTop="96dp"
         android:text="Finished loading the dishwasher"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="219dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:id="@+id/textView35"
@@ -109,10 +115,13 @@
         android:id="@+id/textView37"
         android:layout_width="74dp"
         android:layout_height="23dp"
+        android:layout_marginTop="28dp"
         android:text="001"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="22dp" />
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
