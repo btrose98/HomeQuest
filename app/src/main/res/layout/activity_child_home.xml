@@ -39,58 +39,63 @@
             android:id="@+id/childCalendar"
             android:layout_width="165dp"
             android:layout_height="130dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="575dp"
+            android:layout_marginTop="168dp"
             android:adjustViewBounds="true"
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/btMessagesChild"
+            app:layout_constraintHorizontal_bias="0.714"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
             app:srcCompat="@drawable/calendar_icon" />
 
         <ImageButton
             android:id="@+id/btRedeem"
             android:layout_width="165dp"
             android:layout_height="130dp"
-            android:layout_marginTop="425dp"
-            android:layout_marginEnd="35dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="32dp"
             android:adjustViewBounds="true"
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/btMessagesChild"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/redeem_icon" />
 
         <ImageButton
             android:id="@+id/btChildSettings"
             android:layout_width="165dp"
             android:layout_height="130dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toEndOf="@+id/btFriends"
+            app:layout_constraintTop_toBottomOf="@+id/btMessagesChild"
             app:srcCompat="@drawable/settings_icon" />
 
         <ImageButton
             android:id="@+id/btQuest"
             android:layout_width="165dp"
             android:layout_height="130dp"
-            android:layout_marginTop="425dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="26dp"
             android:adjustViewBounds="true"
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/childCalendar"
             app:layout_constraintEnd_toStartOf="@+id/btRedeem"
-            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/quests_icon" />
 
@@ -98,33 +103,29 @@
             android:id="@+id/btFriends"
             android:layout_width="165dp"
             android:layout_height="130dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btChildSettings"
-            app:layout_constraintHorizontal_bias="0.714"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/childCalendar"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/friends_icon" />
 
         <ImageButton
             android:id="@+id/btMessagesChild"
             android:layout_width="165dp"
             android:layout_height="130dp"
+            android:layout_marginTop="168dp"
             android:adjustViewBounds="true"
             android:maxWidth="100dp"
             android:maxHeight="100dp"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/btChildSettings"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.26"
-            app:layout_constraintStart_toEndOf="@+id/childCalendar"
-            app:layout_constraintTop_toBottomOf="@+id/btRedeem"
-            app:layout_constraintVertical_bias="0.555"
+            app:layout_constraintHorizontal_bias="0.861"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
             app:srcCompat="@drawable/messages_icon" />
 
         <Button
@@ -150,6 +151,21 @@
             app:layout_constraintHorizontal_bias="0.908"
             app:layout_constraintStart_toStartOf="@+id/logo"
             app:layout_constraintTop_toTopOf="@+id/logo" />
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="241dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="51dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

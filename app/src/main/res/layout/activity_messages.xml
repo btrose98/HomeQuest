@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e7e9ec"
     tools:context=".messages">
 
     <ImageView
@@ -41,14 +42,14 @@
 
     <TextView
         android:id="@+id/textView32"
-        android:layout_width="225dp"
-        android:layout_height="34dp"
+        android:layout_width="178dp"
+        android:layout_height="31dp"
         android:layout_marginTop="224dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="Good job sweetie! I'm proud of you :)"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintHorizontal_bias="0.587"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
@@ -89,7 +90,7 @@
         android:id="@+id/textView36"
         android:layout_width="214dp"
         android:layout_height="39dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="460dp"
         android:background="#e7e9ec"
         android:gravity="center_horizontal|center_vertical"
         android:hint="Type your message here"
@@ -97,8 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Button
         android:id="@+id/button5"
@@ -123,5 +123,19 @@
         app:layout_constraintStart_toStartOf="@+id/logo"
         app:layout_constraintTop_toTopOf="@+id/logo" />
 
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="52dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="120dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="10dp"
+        android:maxHeight="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
