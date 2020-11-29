@@ -19,7 +19,7 @@ public class redeemRewards extends AppCompatActivity {
         setContentView(R.layout.activity_redeem_rewards);
 
         backButton = findViewById(R.id.backButton);
-        btReward = findViewById(R.id.btReward1);
+        btReward = (Button) findViewById(R.id.btReward1);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

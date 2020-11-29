@@ -22,18 +22,17 @@ public class quests extends AppCompatActivity {
         setContentView(R.layout.activity_quests);
 
         backButton = findViewById(R.id.backButton);
-        btChildFinish1 = (CheckBox) findViewById(R.id.btChildFinish1);
-        btParentFinish1 = (CheckBox) findViewById(R.id.btTrackProg1);
-        btApproved1 = (CheckBox) findViewById(R.id.btChildApproved1);
-        btChildFinish2 = (CheckBox) findViewById(R.id.btChildFinish2);
-        btParentFinish2 = (CheckBox) findViewById(R.id.btTrackProg2);
-        btApproved2 = (CheckBox) findViewById(R.id.btChildApproved2);
+        btChildFinish1 = findViewById(R.id.btChildFinish1);
+        btParentFinish1 = findViewById(R.id.btTrackProg1);
+        btApproved1 = findViewById(R.id.btChildApproved1);
+        btChildFinish2 = findViewById(R.id.btChildFinish2);
+        btParentFinish2 = findViewById(R.id.btTrackProg2);
+        btApproved2 = findViewById(R.id.btChildApproved2);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         final SharedPreferences.Editor editor = preferences.edit();
 
-
-        if(preferences.contains("checked") && preferences.getBoolean("checked",false) == true) {
+        if(preferences.contains("finished1Checked") && preferences.getBoolean("finished1Checked",false) == true) {
             btChildFinish1.setChecked(true);
         }else {
             btChildFinish1.setChecked(false);
@@ -42,38 +41,43 @@ public class quests extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(btChildFinish1.isChecked()) {
-                    editor.putBoolean("checked", true);
+                    editor.putBoolean("finished1Checked", true);
                 }else{
-                    editor.putBoolean("checked", false);
+                    editor.putBoolean("finished1Checked", false);
                 }
                 editor.apply();
             }
         });
 
-        if(preferences.getBoolean("checked", true) && preferences.getBoolean("checked2", true)){
+        if(preferences.getBoolean("finished1Checked", true) && preferences.getBoolean("checked2", true)){
             btApproved1.setChecked(true);
+        }else{
+            btApproved1.setChecked(false);
         }
 
 
-        if(preferences.contains("checked3") && preferences.getBoolean("checked3",false) == true) {
+
+        if(preferences.contains("finished2Checked") && preferences.getBoolean("finished2Checked",false) == true) {
             btChildFinish2.setChecked(true);
         }else {
             btChildFinish2.setChecked(false);
         }
-        btChildFinish1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        btChildFinish2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(btChildFinish2.isChecked()) {
-                    editor.putBoolean("checked3", true);
+                    editor.putBoolean("finished2Checked", true);
                 }else{
-                    editor.putBoolean("checked3", false);
+                    editor.putBoolean("finished2Checked", false);
                 }
                 editor.apply();
             }
         });
 
-        if(preferences.getBoolean("checked3", true) && preferences.getBoolean("checked4", true)){
+        if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", true)){
             btApproved2.setChecked(true);
+        }else{
+            btApproved2.setChecked(false);
         }
 
 
