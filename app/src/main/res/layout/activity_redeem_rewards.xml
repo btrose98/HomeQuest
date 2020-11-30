@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btReward2" />
 
     <TextView
         android:id="@+id/textView22"
@@ -65,13 +65,13 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:text="Locked"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/btReward2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btReward2"
         android:layout_width="138dp"
         android:layout_height="148dp"
         android:layout_marginStart="50dp"

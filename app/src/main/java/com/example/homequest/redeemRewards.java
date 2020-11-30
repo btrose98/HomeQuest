@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class redeemRewards extends AppCompatActivity {
 
     private ImageButton backButton;
-    private Button btReward;
+    private Button btReward, btReward2;
     private static CheckBox taskComplete1;
 
     @Override
@@ -24,6 +24,7 @@ public class redeemRewards extends AppCompatActivity {
 
         backButton = findViewById(R.id.backButton);
         btReward = findViewById(R.id.btReward1);
+        btReward2 = findViewById(R.id.btReward2);
         taskComplete1 = findViewById(R.id.btTrackProg1);
 
 
@@ -38,11 +39,18 @@ public class redeemRewards extends AppCompatActivity {
             }
         });
 
-        //unlock reward when parent approves chore completion
+        //unlock reward1 when parent approves chore completion
         if(preferences.getBoolean("finished1Checked", true) && preferences.getBoolean("checked2", true)){
-            btReward.setText("Sleepover");
+            btReward.setText("30 minutes of screen time");
         }else{
             btReward.setText("Locked");
+        }
+
+        //unlock reward2 when parent approves chore completion
+        if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", true)){
+            btReward2.setText("Pick a movie for movie night");
+        }else{
+            btReward2.setText("Locked");
         }
 
     }
