@@ -13,6 +13,106 @@
         android:background="#e7e9ec"
         tools:context=".childHome">
 
+        <Button
+            android:id="@+id/btChildSignout"
+            android:layout_width="81dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="4dp"
+            android:text="sign out"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.012"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/childCalendar"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/btMessagesChild"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btQuest"
+            app:srcCompat="@drawable/calendar_icon" />
+
+        <ImageButton
+            android:id="@+id/btRedeemRewardScreen"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="416dp"
+            android:layout_marginEnd="35dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/redeem_icon" />
+
+        <ImageButton
+            android:id="@+id/btChildSettings"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btMessagesChild"
+            app:srcCompat="@drawable/settings_icon" />
+
+        <ImageButton
+            android:id="@+id/btQuest"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="416dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/btRedeemRewardScreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/quests_icon" />
+
+        <ImageButton
+            android:id="@+id/btFriends"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/btChildSettings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/childCalendar"
+            app:srcCompat="@drawable/friends_icon" />
+
+        <ImageButton
+            android:id="@+id/btMessagesChild"
+            android:layout_width="165dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btRedeemRewardScreen"
+            app:srcCompat="@drawable/messages_icon" />
+
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="342dp"
@@ -35,122 +135,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/app_icon" />
 
-        <ImageButton
-            android:id="@+id/childCalendar"
-            android:layout_width="165dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="168dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toStartOf="@+id/btMessagesChild"
-            app:layout_constraintHorizontal_bias="0.714"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:srcCompat="@drawable/calendar_icon" />
-
-        <ImageButton
-            android:id="@+id/btRedeemRewardScreen"
-            android:layout_width="165dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="32dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/btMessagesChild"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/redeem_icon" />
-
-        <ImageButton
-            android:id="@+id/btChildSettings"
-            android:layout_width="165dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="12dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.285"
-            app:layout_constraintStart_toEndOf="@+id/btFriends"
-            app:layout_constraintTop_toBottomOf="@+id/btMessagesChild"
-            app:srcCompat="@drawable/settings_icon" />
-
-        <ImageButton
-            android:id="@+id/btQuest"
-            android:layout_width="165dp"
-            android:layout_height="130dp"
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="259dp"
+            android:layout_height="48dp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="26dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/childCalendar"
-            app:layout_constraintEnd_toStartOf="@+id/btRedeemRewardScreen"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/quests_icon" />
-
-        <ImageButton
-            android:id="@+id/btFriends"
-            android:layout_width="165dp"
-            android:layout_height="130dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="12dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
-            android:scaleType="fitXY"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/childCalendar"
-            app:srcCompat="@drawable/friends_icon" />
-
-        <ImageButton
-            android:id="@+id/btMessagesChild"
-            android:layout_width="165dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="168dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.861"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:srcCompat="@drawable/messages_icon" />
-
-        <Button
-            android:id="@+id/btChildSignout"
-            android:layout_width="81dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="4dp"
-            android:text="sign out"
-            android:textSize="8sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.012"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="62dp"
-            android:layout_height="18dp"
-            android:layout_marginTop="24dp"
-            android:text="001"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="@+id/logo"
-            app:layout_constraintHorizontal_bias="0.908"
-            app:layout_constraintStart_toStartOf="@+id/logo"
-            app:layout_constraintTop_toTopOf="@+id/logo" />
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:srcCompat="@drawable/emily_s_badges" />
 
         <ProgressBar
             android:id="@+id/progressBar4"
@@ -166,30 +162,32 @@
             app:layout_constraintTop_toBottomOf="@+id/textView44" />
 
         <TextView
+            android:id="@+id/textView8"
+            android:layout_width="62dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="24dp"
+            android:text="001"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/logo"
+            app:layout_constraintHorizontal_bias="0.908"
+            app:layout_constraintStart_toStartOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="@+id/logo" />
+
+        <TextView
             android:id="@+id/textView44"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="86dp"
+            android:layout_marginStart="102dp"
             android:layout_marginTop="36dp"
-            android:layout_marginEnd="119dp"
+            android:layout_marginEnd="102dp"
             android:text="Emily's Daily Progress"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.739"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView5" />
-
-        <ImageView
-            android:id="@+id/imageView31"
-            android:layout_width="259dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="24dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintHorizontal_bias="0.461"
-            app:layout_constraintStart_toStartOf="@+id/imageView5"
-            app:srcCompat="@drawable/emily_s_badges" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
