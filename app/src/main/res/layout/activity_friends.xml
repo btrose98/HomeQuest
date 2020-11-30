@@ -152,7 +152,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ProgressBar
-            android:id="@+id/progressBar2"
+            android:id="@+id/progressBarFriend1"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="186dp"
             android:layout_height="61dp"
@@ -181,7 +181,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <ProgressBar
-            android:id="@+id/progressBar3"
+            android:id="@+id/progressBarFriend2"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="186dp"
             android:layout_height="61dp"
