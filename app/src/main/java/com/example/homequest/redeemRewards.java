@@ -33,19 +33,12 @@ public class redeemRewards extends AppCompatActivity {
         });
 
 
-        if(taskComplete1.isChecked()){
-            btReward.setText("Sleepover");
-        }else{
-            btReward.setText("Locked");
-        }
-
-        btReward.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(redeemRewards.this, "Reward Claimed: 1 sleepover!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
+        //!!!!!!!!!!!!!!!!!!THIS CAUSES ERROR WHERE CHILD CANT ACCESS REDEEM REWARD SCREEN !!!!!!!!!!!!!!!!!!!!!
+//        if(taskComplete1.isChecked()){
+//            btReward.setText("Sleepover");
+//        }else{
+//            btReward.setText("Locked");
+//        }
 
     }
 }

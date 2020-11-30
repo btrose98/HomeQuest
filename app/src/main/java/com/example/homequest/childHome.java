@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class childHome extends AppCompatActivity {
 
-    private ImageButton btCalender, btChildSettings, btRedeem, btQuest, btFriends, btMessages;
+    private ImageButton btCalender, btChildSettings, btRedeemScreen, btQuest, btFriends, btMessages;
     private Button btSignOut;
 
     @Override
@@ -21,7 +20,7 @@ public class childHome extends AppCompatActivity {
 
         btCalender = (ImageButton) findViewById(R.id.childCalendar);
         btChildSettings = (ImageButton) findViewById(R.id.btChildSettings);
-        btRedeem = (ImageButton) findViewById(R.id.btRedeem);
+        btRedeemScreen = findViewById(R.id.btRedeemRewardScreen);
         btQuest = (ImageButton) findViewById(R.id.btQuest);
         btFriends = (ImageButton) findViewById(R.id.btFriends);
         btSignOut = (Button) findViewById(R.id.btChildSignout);
@@ -44,7 +43,7 @@ public class childHome extends AppCompatActivity {
             }
         });
 
-        btRedeem.setOnClickListener(new View.OnClickListener() {
+        btRedeemScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(childHome.this, redeemRewards.class);

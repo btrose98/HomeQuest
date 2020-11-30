@@ -11,7 +11,6 @@ public class parentSettings extends AppCompatActivity {
 
     private ImageButton backButton;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

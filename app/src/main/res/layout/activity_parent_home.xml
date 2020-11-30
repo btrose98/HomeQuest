@@ -158,7 +158,7 @@
             app:srcCompat="@drawable/calendar_icon" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/btBalance"
             android:layout_width="166dp"
             android:layout_height="123dp"
             android:layout_marginTop="20dp"

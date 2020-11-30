@@ -51,7 +51,7 @@
             app:srcCompat="@drawable/calendar_icon" />
 
         <ImageButton
-            android:id="@+id/btRedeem"
+            android:id="@+id/btRedeemRewardScreen"
             android:layout_width="165dp"
             android:layout_height="130dp"
             android:layout_marginTop="26dp"
@@ -92,7 +92,7 @@
             android:maxHeight="100dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/childCalendar"
-            app:layout_constraintEnd_toStartOf="@+id/btRedeem"
+            app:layout_constraintEnd_toStartOf="@+id/btRedeemRewardScreen"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView5"

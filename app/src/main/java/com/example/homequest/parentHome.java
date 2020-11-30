@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class parentHome extends AppCompatActivity {
 
-    ImageButton calendarButton, parentSettingsButton, assignChoresButton, btProgress, btMessages;
+    ImageButton calendarButton, parentSettingsButton, assignChoresButton, btProgress, btMessages, btBalance;
     private Button btSignOut;
 
 
@@ -26,6 +26,7 @@ public class parentHome extends AppCompatActivity {
         btProgress = (ImageButton) findViewById(R.id.btProgress);
         btSignOut = findViewById(R.id.btParentSignout);
         btMessages = (ImageButton) findViewById(R.id.btMessagesParent);
+        btBalance = findViewById(R.id.btBalance);
 
 
         calendarButton.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +73,14 @@ public class parentHome extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(parentHome.this, messages.class);
+                startActivity(intent);
+            }
+        });
+
+        btBalance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(parentHome.this, balance.class);
                 startActivity(intent);
             }
         });
