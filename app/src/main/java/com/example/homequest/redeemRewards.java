@@ -1,7 +1,9 @@
 package com.example.homequest;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +27,10 @@ public class redeemRewards extends AppCompatActivity {
         taskComplete1 = findViewById(R.id.btTrackProg1);
 
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        final SharedPreferences.Editor editor = preferences.edit();
+
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -32,13 +38,12 @@ public class redeemRewards extends AppCompatActivity {
             }
         });
 
-
-        //!!!!!!!!!!!!!!!!!!THIS CAUSES ERROR WHERE CHILD CANT ACCESS REDEEM REWARD SCREEN !!!!!!!!!!!!!!!!!!!!!
-//        if(taskComplete1.isChecked()){
-//            btReward.setText("Sleepover");
-//        }else{
-//            btReward.setText("Locked");
-//        }
+        //unlock reward when parent approves chore completion
+        if(preferences.getBoolean("finished1Checked", true) && preferences.getBoolean("checked2", true)){
+            btReward.setText("Sleepover");
+        }else{
+            btReward.setText("Locked");
+        }
 
     }
 }
