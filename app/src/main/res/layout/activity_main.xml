@@ -58,7 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/app_icon" />
+        app:srcCompat="@drawable/homequest_icon_noid" />
 
     <TextView
         android:id="@+id/textView3"
