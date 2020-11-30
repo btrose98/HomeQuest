@@ -74,7 +74,7 @@ public class quests extends AppCompatActivity {
             }
         });
 
-        if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", true)){
+        if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", false) == true){
             btApproved2.setChecked(true);
         }else{
             btApproved2.setChecked(false);

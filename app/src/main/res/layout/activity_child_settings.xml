@@ -49,7 +49,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="200dp"
         android:text="Change Profile Picture"
         android:textColor="#040404"
         android:textStyle="bold"
@@ -60,13 +60,11 @@
 
     <ImageView
         android:id="@+id/imageView36"
-        android:layout_width="104dp"
-        android:layout_height="106dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="237dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView13"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_width="89dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         app:srcCompat="@drawable/emily" />
@@ -76,10 +74,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="199dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="75dp"
         android:text="Upload new photo"
         app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="@+id/imageView13"
         app:layout_constraintTop_toTopOf="@+id/imageView13" />
 

@@ -45,6 +45,16 @@ public class redeemRewards extends AppCompatActivity {
         }else{
             btReward.setText("Locked");
         }
+        btReward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                if(preferences.getBoolean("finished1Checked", true) && preferences.getBoolean("checked2", true)){
+                    Toast.makeText(getApplicationContext(), "Reward Redeemed", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Complete chores to unlock and redeem rewards", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         //unlock reward2 when parent approves chore completion
         if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", true)){
@@ -52,6 +62,16 @@ public class redeemRewards extends AppCompatActivity {
         }else{
             btReward2.setText("Locked");
         }
+        btReward.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", true)){
+                    Toast.makeText(getApplicationContext(), "Reward Redeemed", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Complete chores to unlock and redeem rewards", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 }
