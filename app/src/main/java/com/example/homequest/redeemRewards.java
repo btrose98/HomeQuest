@@ -15,7 +15,7 @@ public class redeemRewards extends AppCompatActivity {
 
     private ImageButton backButton;
     private Button btReward, btReward2;
-    private static CheckBox taskComplete1;
+    private static CheckBox taskComplete1, approved1, approved2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,8 @@ public class redeemRewards extends AppCompatActivity {
         btReward = findViewById(R.id.btReward1);
         btReward2 = findViewById(R.id.btReward2);
         taskComplete1 = findViewById(R.id.btTrackProg1);
+        approved1 = findViewById(R.id.btChildApproved1);
+        approved2 = findViewById(R.id.btChildApproved2);
 
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -62,7 +64,7 @@ public class redeemRewards extends AppCompatActivity {
         }else{
             btReward2.setText("Locked");
         }
-        btReward.setOnClickListener(new View.OnClickListener() {
+        btReward2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 if(preferences.getBoolean("finished2Checked", true) && preferences.getBoolean("checked4", true)){
