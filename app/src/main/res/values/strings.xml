@@ -118,6 +118,6 @@
     <string name="children_list">Children List</string>
     <string-array name="childrenList">
         <item>Emily</item>
-        <item>Patrick</item>
+        <item>Joshua</item>
     </string-array>
 </resources>

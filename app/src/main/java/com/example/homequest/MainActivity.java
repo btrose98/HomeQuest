@@ -60,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
                     successfulLogIn("child");
                     Intent intent = new Intent(MainActivity.this, childHome.class);
                     startActivity(intent);
+                }else if(stringValue(etUsername).equals("JaneDoe") && stringValue(etPassword).equals("Jane123")) {
+                    successfulLogIn("Jane");
+                    Intent intent = new Intent(MainActivity.this, parentHome.class);
+                    startActivity(intent);
+                }else if(stringValue(etUsername).equals("EmilyDoe") && stringValue(etPassword).equals("Emily123")){
+                    successfulLogIn("Emily");
+                    Intent intent = new Intent(MainActivity.this, childHome.class);
+                    startActivity(intent);
                 }else{
                     Toast.makeText(getApplicationContext(), "Invalid Username or Password", Toast.LENGTH_SHORT).show();
                 }

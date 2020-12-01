@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 
 public class trackProgress extends AppCompatActivity {
 
     private ImageButton backButton;
     private static CheckBox taskComplete1, taskComplete2;
+    private ProgressBar childProgress, childProgress2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,11 @@ public class trackProgress extends AppCompatActivity {
         backButton = findViewById(R.id.backButton);
         taskComplete1 = findViewById(R.id.btTrackProg1);
         taskComplete2 = findViewById(R.id.btTrackProg2);
+        childProgress = findViewById(R.id.progressBar6);
+        childProgress2 = findViewById(R.id.progressBar5);
+
+        childProgress.setProgress(50);
+        childProgress2.setProgress(25);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
