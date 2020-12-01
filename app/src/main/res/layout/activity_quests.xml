@@ -1,243 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#e7e9ec"
-    tools:context=".quests">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="113dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:text="Unlock"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e9ec"
+        tools:context=".quests">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="113dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:text="Unlock"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="113dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:text="Unlock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="113dp"
-        android:layout_height="112dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="Unlock"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="113dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Unlock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
-    <CheckBox
-        android:id="@+id/btChildFinish1"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="0dp"
-        android:text="Finished"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintTop_toTopOf="@+id/imageView23" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="113dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Unlock"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
-    <CheckBox
-        android:id="@+id/btChildFinish2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="0dp"
-        android:text="Finished"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView24"
-        app:layout_constraintTop_toTopOf="@+id/imageView24" />
+        <CheckBox
+            android:id="@+id/btChildFinish1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:text="Finished"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView23"
+            app:layout_constraintTop_toTopOf="@+id/imageView23" />
 
-    <CheckBox
-        android:id="@+id/btChildApproved1"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="0dp"
-        android:checked="false"
-        android:clickable="false"
-        android:text="Approved"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/btChildFinish1" />
+        <CheckBox
+            android:id="@+id/btChildFinish2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:text="Finished"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView24"
+            app:layout_constraintTop_toTopOf="@+id/imageView24" />
 
-    <CheckBox
-        android:id="@+id/btChildApproved2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="16dp"
-        android:clickable="false"
-        android:text="Approved"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView24"
-        app:layout_constraintTop_toBottomOf="@+id/btChildFinish2" />
+        <CheckBox
+            android:id="@+id/btChildApproved1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:checked="false"
+            android:clickable="false"
+            android:text="Approved"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/btChildFinish1" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="349dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="Once you complete all of today's quests, you can start unlocking bonus quests for bonus rewards."
-        android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        <CheckBox
+            android:id="@+id/btChildApproved2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            android:text="Approved"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/btChildFinish2" />
 
-    <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="52dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="10dp"
-        android:maxHeight="10dp"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_button" />
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="349dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Once you complete all of today's quests, you can start unlocking bonus quests for bonus rewards."
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="256dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:srcCompat="@drawable/medium_white_block" />
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="10dp"
+            android:maxHeight="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button" />
 
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="256dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23"
-        app:srcCompat="@drawable/medium_white_block" />
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="256dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/medium_white_block" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quests"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="256dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView23"
+            app:srcCompat="@drawable/medium_white_block" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="For today"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quests"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.096" />
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
-        android:text="Bonus Quests"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:text="For today"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="173dp"
-        android:layout_marginBottom="88dp"
-        android:text="Load the dishwasher"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
-        app:layout_constraintEnd_toEndOf="@+id/imageView23"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintStart_toStartOf="@+id/imageView23"
-        app:layout_constraintTop_toTopOf="@+id/imageView23"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:text="Bonus Quests"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="173dp"
-        android:layout_marginBottom="93dp"
-        android:text="Put away toys"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView24"
-        app:layout_constraintEnd_toEndOf="@+id/imageView24"
-        app:layout_constraintHorizontal_bias="0.413"
-        app:layout_constraintStart_toStartOf="@+id/imageView24"
-        app:layout_constraintTop_toTopOf="@+id/imageView24"
-        app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="173dp"
+            android:layout_marginBottom="88dp"
+            android:text="Load the dishwasher"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toTopOf="@+id/imageView23"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="186dp"
-        android:layout_marginBottom="56dp"
-        android:text="Reward: 30 minutes screen time"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView23"
-        app:layout_constraintEnd_toEndOf="@+id/imageView23"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="173dp"
+            android:layout_marginBottom="93dp"
+            android:text="Put away toys"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+            app:layout_constraintEnd_toEndOf="@+id/imageView24"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toTopOf="@+id/imageView24"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="185dp"
-        android:text="Reward: Choose the movie \nfor movie night"
-        app:layout_constraintEnd_toEndOf="@+id/imageView24"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="186dp"
+            android:layout_marginBottom="56dp"
+            android:text="Reward: 30 minutes screen time"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+            app:layout_constraintEnd_toEndOf="@+id/imageView23"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:layout_constraintVertical_bias="1.0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="185dp"
+            android:text="Reward: Choose the movie \nfor movie night"
+            app:layout_constraintEnd_toEndOf="@+id/imageView24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
